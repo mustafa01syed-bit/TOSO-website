@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TOSO Kitchen</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#131A0F">
+<link rel="icon" href="data:image/jpeg;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green-950:#131A0F; --green-900:#1A2216; --green-850:#232E1D; --green-800:#303B2A;
+  --bone:#F2EADA; --bone-2:rgba(242,234,218,.70); --bone-3:rgba(242,234,218,.45);
+  --line:rgba(242,234,218,.15); --line-2:rgba(242,234,218,.30);
+  --ember:#D4652C; --ember-2:#E88B4E; --leaf:#9BC46F; --alert:#E9704F; --sky:#7FB2D9;
+  --display:"Archivo",system-ui,sans-serif; --body:"Instrument Sans",system-ui,sans-serif;
+  --r-sm:6px; --r-md:12px; --r-lg:18px; --ease:cubic-bezier(.22,.61,.36,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--green-950);color:var(--bone);font-family:var(--body);font-size:16px;line-height:1.5;
+  -webkit-font-smoothing:antialiased}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:800;line-height:1.05;letter-spacing:-.01em}
+p{margin:0}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:inherit;text-decoration:none}
+input{font:inherit;color:inherit}
+:focus-visible{outline:2.5px solid var(--ember-2);outline-offset:3px;border-radius:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---- gate ---- */
+.gate{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:24px;background:var(--green-950)}
+.gate__card{width:min(380px,100%);text-align:center}
+.gate img{width:76px;height:76px;border-radius:50%;margin:0 auto 22px;border:1px solid var(--line-2)}
+.gate h1{font-size:26px;font-stretch:112%;letter-spacing:.02em}
+.gate p{margin-top:10px;color:var(--bone-3);font-size:14.5px}
+.pin{display:flex;gap:10px;margin-top:24px}
+.pin input{flex:1;background:var(--green-850);border:1px solid var(--line-2);border-radius:999px;
+  padding:14px 20px;font-size:19px;letter-spacing:.4em;text-align:center;font-family:var(--display);font-weight:700}
+.pin input::placeholder{letter-spacing:.2em;font-size:15px;color:var(--bone-3);font-family:var(--body);font-weight:400}
+.gate__err{margin-top:12px;color:var(--alert);font-size:13.5px;min-height:20px}
+
+/* ---- shell ---- */
+.app{display:none;min-height:100dvh;flex-direction:column}
+.app.is-on{display:flex}
+.top{position:sticky;top:0;z-index:20;background:rgba(19,26,15,.94);backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top__in{max-width:1180px;margin-inline:auto;padding:12px clamp(14px,3vw,26px);display:flex;align-items:center;gap:12px}
+.top__b{display:flex;align-items:center;gap:11px;margin-right:auto;min-width:0}
+.top__b img{width:36px;height:36px;border-radius:50%;border:1px solid var(--line-2);flex:none}
+.top__t{font-family:var(--display);font-weight:800;font-size:16px;letter-spacing:.2em;font-stretch:112%}
+.top__s{font-size:11px;color:var(--bone-3);margin-top:3px;display:flex;align-items:center;gap:6px}
+.conn{width:7px;height:7px;border-radius:50%;background:var(--leaf);flex:none}
+.conn.is-off{background:var(--alert)}
+.conn.is-demo{background:var(--ember-2)}
+.tool{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;
+  color:var(--bone-2);transition:.16s;flex:none}
+.tool:hover{background:rgba(242,234,218,.08);color:var(--bone)}
+.tool[aria-pressed="true"]{background:var(--ember);border-color:var(--ember);color:#fff}
+.tool svg{width:17px;height:17px}
+
+.tabs{border-bottom:1px solid var(--line);background:var(--green-900)}
+.tabs__in{max-width:1180px;margin-inline:auto;padding-inline:clamp(14px,3vw,26px);display:flex;gap:4px;
+  overflow-x:auto;scrollbar-width:none}
+.tabs__in::-webkit-scrollbar{display:none}
+.tabs button{flex:none;padding:13px 15px;font-size:14px;font-weight:600;color:var(--bone-3);white-space:nowrap;
+  border-bottom:2px solid transparent;transition:.16s;display:flex;align-items:center;gap:8px}
+.tabs button:hover{color:var(--bone)}
+.tabs button[aria-selected="true"]{color:var(--bone);border-bottom-color:var(--ember)}
+.tabs b{min-width:20px;height:20px;padding:0 6px;border-radius:999px;background:rgba(242,234,218,.12);
+  display:grid;place-items:center;font-size:11.5px;font-variant-numeric:tabular-nums}
+.tabs button[data-f="new"] b.hot{background:var(--ember);color:#fff}
+
+.board{flex:1;max-width:1180px;width:100%;margin-inline:auto;padding:clamp(16px,3vw,26px);
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px;align-content:start}
+.blank{grid-column:1/-1;text-align:center;padding:70px 20px;color:var(--bone-3)}
+.blank h3{font-size:20px;color:var(--bone);font-stretch:108%}
+.blank p{margin-top:9px;font-size:14.5px;max-width:34ch;margin-inline:auto;line-height:1.6}
+
+/* ---- ticket ---- */
+.tk{border:1px solid var(--line-2);border-radius:var(--r-lg);background:var(--green-900);overflow:hidden;
+  display:flex;flex-direction:column}
+.tk.is-fresh{border-color:var(--ember);box-shadow:0 0 0 3px rgba(212,101,44,.16);animation:land .45s var(--ease)}
+@keyframes land{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+.tk__h{display:flex;align-items:flex-start;gap:12px;padding:15px 16px;border-bottom:1px dashed var(--line)}
+.tk__code{font-family:var(--display);font-weight:800;font-size:17px;letter-spacing:.1em;font-stretch:108%}
+.tk__when{font-size:12px;color:var(--bone-3);margin-top:4px;font-variant-numeric:tabular-nums}
+.pill{margin-left:auto;flex:none;font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  border-radius:999px;padding:5px 11px;border:1px solid currentColor}
+.pill.new{color:var(--ember-2)} .pill.cooking{color:#E4C15F} .pill.away{color:var(--sky)}
+.pill.ready{color:var(--sky)} .pill.done{color:var(--leaf)} .pill.cancelled{color:var(--bone-3)}
+
+.tk__who{padding:13px 16px;border-bottom:1px dashed var(--line);display:grid;gap:7px;font-size:14px}
+.tk__row{display:flex;gap:10px;align-items:flex-start;color:var(--bone-2)}
+.tk__row svg{width:15px;height:15px;flex:none;margin-top:3px;color:var(--bone-3)}
+.tk__row b{color:var(--bone);font-weight:600}
+.tk__row a{color:var(--bone);font-weight:600;border-bottom:1px solid var(--line-2)}
+.tk__row a:hover{border-color:var(--ember)}
+.mode{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--green-950);background:var(--bone);border-radius:999px;padding:3px 10px}
+.mode.pick{background:var(--sky)}
+
+.tk__items{padding:13px 16px;display:grid;gap:10px;flex:1}
+.it{display:grid;grid-template-columns:26px 1fr auto;gap:10px;align-items:baseline;font-size:14.5px}
+.it__q{font-family:var(--display);font-weight:800;color:var(--ember-2);font-variant-numeric:tabular-nums}
+.it__n{font-weight:600}
+.it__m{display:block;font-size:12.5px;color:var(--bone-3);margin-top:3px;line-height:1.45}
+.it__note{display:block;font-size:12.5px;color:#E4C15F;margin-top:3px}
+.it__p{font-variant-numeric:tabular-nums;color:var(--bone-2);font-size:13.5px}
+.tk__note{margin:0 16px 13px;border:1px solid rgba(228,193,95,.35);border-radius:var(--r-sm);padding:9px 12px;
+  font-size:13px;color:#E4C15F;line-height:1.5}
+
+.tk__f{padding:13px 16px;border-top:1px dashed var(--line);background:var(--green-850)}
+.tk__tot{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px}
+.tk__tot span{font-size:12.5px;color:var(--bone-3)}
+.tk__tot b{font-family:var(--display);font-weight:800;font-size:21px;font-stretch:108%}
+.acts{display:flex;gap:8px;flex-wrap:wrap}
+.act{flex:1;min-width:110px;padding:11px 14px;border-radius:999px;font-size:14px;font-weight:600;text-align:center;
+  transition:.16s}
+.act--go{background:var(--ember);color:#fff}
+.act--go:hover{filter:brightness(1.08)}
+.act--ok{background:var(--leaf);color:var(--green-950)}
+.act--ok:hover{filter:brightness(1.06)}
+.act--q{border:1px solid var(--line-2);color:var(--bone-2);flex:0 0 auto;min-width:0}
+.act--q:hover{background:rgba(242,234,218,.08);color:var(--bone)}
+.act--x{border:1px solid rgba(233,112,79,.4);color:var(--alert);flex:0 0 auto;min-width:0}
+.act--x:hover{background:rgba(233,112,79,.12)}
+
+.note{max-width:1180px;margin:0 auto;padding:0 clamp(14px,3vw,26px)}
+.note__in{border:1px dashed var(--line-2);border-radius:var(--r-md);padding:13px 16px;margin-top:16px;
+  font-size:13.5px;color:var(--bone-2);line-height:1.6;display:flex;gap:12px;align-items:flex-start}
+.note__in svg{width:16px;height:16px;flex:none;margin-top:3px;color:var(--ember-2)}
+.note__in b{color:var(--bone)}
+.note__in button{margin-top:8px;display:inline-block;font-size:13px;font-weight:600;color:var(--ember-2)}
+.note__in button:hover{text-decoration:underline}
+
+.toasts{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:60;display:grid;gap:9px;
+  width:max-content;max-width:calc(100vw - 28px);pointer-events:none}
+.toast{background:var(--bone);color:var(--green-950);padding:12px 18px;border-radius:999px;font-size:14.5px;
+  font-weight:600;box-shadow:0 12px 34px rgba(0,0,0,.45);animation:tin .28s var(--ease)}
+@keyframes tin{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+@media (max-width:560px){
+  .board{grid-template-columns:1fr;padding:14px}
+  .top__t{font-size:14px}
+}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{
+  .top,.tabs,.note,.acts,.toasts{display:none!important}
+  body{background:#fff;color:#000}
+  .board{display:block;padding:0}
+  .tk{border:1px solid #000;margin-bottom:10px;background:#fff;color:#000;break-inside:avoid}
+  .tk__f{background:#fff}
+}
+</style>
+</head>
+<body>
+
+<div class="gate" id="gate">
+  <div class="gate__card">
+    <img src="data:image/jpeg;base64,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" alt="TOSO">
+    <h1>Kitchen</h1>
+    <p>Enter the staff code to see incoming orders.</p>
+    <div class="pin">
+      <input id="pin" type="password" inputmode="numeric" autocomplete="off" maxlength="8" placeholder="Staff code" aria-label="Staff code">
+      <button class="tool" id="pinGo" aria-label="Unlock" style="width:52px;border-radius:999px;background:var(--ember);border-color:var(--ember);color:#fff">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h13m-5-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+    <p class="gate__err" id="pinErr" role="alert"></p>
+  </div>
+</div>
+
+<div class="app" id="app">
+  <header class="top">
+    <div class="top__in">
+      <div class="top__b">
+        <img src="data:image/jpeg;base64,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" alt="">
+        <div>
+          <div class="top__t">TOSO KITCHEN</div>
+          <div class="top__s"><span class="conn" id="conn"></span><span id="connTxt">Connecting</span></div>
+        </div>
+      </div>
+      <button class="tool" id="soundBtn" aria-pressed="true" aria-label="Sound alerts" title="Sound alerts">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M11 5 6.5 9H3v6h3.5L11 19V5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M15.5 9.5a3.5 3.5 0 0 1 0 5M18 7a7 7 0 0 1 0 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <button class="tool" id="notifBtn" aria-pressed="false" aria-label="Desktop notifications" title="Desktop notifications">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M6 9a6 6 0 1 1 12 0c0 4 1.5 5.5 1.5 5.5h-15S6 13 6 9Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M10 18a2 2 0 0 0 4 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <button class="tool" id="refreshBtn" aria-label="Refresh now" title="Refresh now">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M20 12a8 8 0 1 1-2.5-5.8M20 4v4h-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <nav class="tabs"><div class="tabs__in" id="tabs" role="tablist" aria-label="Order stages"></div></nav>
+  <div class="note" id="note"></div>
+  <main class="board" id="board" aria-live="polite"></main>
+</div>
+
+<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+<script>
+(function(){
+"use strict";
+
+/* ============================================================
+   CONFIG. Keep these three in step with the customer site
+   and with the Apps Script.
+   ============================================================ */
+const BACKEND = {
+  mode    : "demo",
+  endpoint: "",
+  key     : "",
+  channel : "toso-orders",
+  pollMs  : 8000
+};
+const STAFF_PIN = "2486";
+
+const $  = (s,r)=> (r||document).querySelector(s);
+const $$ = (s,r)=> Array.from((r||document).querySelectorAll(s));
+const money = n => "Rs " + Number(n||0).toLocaleString("en-US");
+const esc = s => String(s==null?"":s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+const STAGES = [
+  {f:"new",     label:"New",          pill:"new"},
+  {f:"cooking", label:"In the kitchen",pill:"cooking"},
+  {f:"out",     label:"Out and ready", pill:"away"},
+  {f:"done",    label:"Finished",      pill:"done"},
+  {f:"all",     label:"Everything",    pill:""}
+];
+const LABEL = {new:"New", cooking:"In the kitchen", away:"Out for delivery",
+               ready:"Ready to collect", done:"Completed", cancelled:"Cancelled"};
+
+const SVG = {
+  pin:'<svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6" stroke="currentColor" stroke-width="1.7"/></svg>',
+  phone:'<svg viewBox="0 0 24 24" fill="none"><path d="M6 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6.5 6.5l1.5-2L21 15v3a2.5 2.5 0 0 1-2.7 2.5C10.6 20 4 13.4 3.5 5.7A2.5 2.5 0 0 1 6 3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>',
+  user:'<svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.6" stroke="currentColor" stroke-width="1.7"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>',
+  info:'<svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 11v5.5M12 7.6v.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>'
+};
+
+let ORDERS = [], filter = "new", seen = new Set(), fresh = new Set();
+let sound = true, notify = false, chan = null, polling = null, everLoaded = false;
+
+/* ============================================================
+   transport
+   ============================================================ */
+const live = () => BACKEND.mode === "live" && !!BACKEND.endpoint;
+
+async function post(action, payload){
+  const res = await fetch(BACKEND.endpoint, {
+    method:"POST", headers:{"Content-Type":"text/plain;charset=utf-8"},
+    body: JSON.stringify(Object.assign({action, key:BACKEND.key}, payload))
+  });
+  if(!res.ok) throw new Error("status " + res.status);
+  const data = await res.json();
+  if(!data || data.ok !== true) throw new Error((data && data.error) || "refused");
+  return data;
+}
+async function fetchOrders(){
+  if(!live()) return ORDERS;
+  const res = await fetch(BACKEND.endpoint + "?action=list&key=" + encodeURIComponent(BACKEND.key));
+  if(!res.ok) throw new Error("status " + res.status);
+  const data = await res.json();
+  if(!data || data.ok !== true) throw new Error((data && data.error) || "refused");
+  return data.orders || [];
+}
+
+function conn(state, text){
+  const c = $("#conn");
+  c.classList.toggle("is-off", state === "off");
+  c.classList.toggle("is-demo", state === "demo");
+  $("#connTxt").textContent = text;
+}
+
+async function refresh(quiet){
+  if(!live()){ conn("demo","Demo mode, orders stay on this device"); render(); return; }
+  try{
+    const list = await fetchOrders();
+    ORDERS = list;
+    conn("on", "Connected, checking every " + Math.round(BACKEND.pollMs/1000) + "s");
+    everLoaded = true;
+    detectNew();
+    render();
+  }catch(err){
+    conn("off", everLoaded ? "Lost the connection, retrying" : "Cannot reach the order server");
+    if(!quiet) toast("Could not reach the order server");
+  }
+}
+
+function detectNew(){
+  const incoming = ORDERS.filter(o => o.status === "new" && !seen.has(o.code));
+  ORDERS.forEach(o => seen.add(o.code));
+  if(!incoming.length) return;
+  incoming.forEach(o => fresh.add(o.code));
+  alertStaff(incoming.length, incoming[0]);
+}
+
+/* ============================================================
+   alerts: chime, desktop notification, tab title
+   ============================================================ */
+let AC = null;
+function chime(){
+  if(!sound) return;
+  try{
+    AC = AC || new (window.AudioContext || window.webkitAudioContext)();
+    if(AC.state === "suspended") AC.resume();
+    [0, 0.18, 0.36].forEach((t,i)=>{
+      const o = AC.createOscillator(), g = AC.createGain();
+      o.type = "sine";
+      o.frequency.value = [880, 1174, 1568][i];
+      g.gain.setValueAtTime(0.0001, AC.currentTime + t);
+      g.gain.exponentialRampToValueAtTime(0.22, AC.currentTime + t + 0.02);
+      g.gain.exponentialRampToValueAtTime(0.0001, AC.currentTime + t + 0.30);
+      o.connect(g).connect(AC.destination);
+      o.start(AC.currentTime + t); o.stop(AC.currentTime + t + 0.32);
+    });
+  }catch(e){}
+}
+function alertStaff(n, order){
+  chime();
+  toast(n === 1 ? "New order " + order.code : n + " new orders");
+  if(notify && "Notification" in window && Notification.permission === "granted"){
+    try{
+      new Notification(n === 1 ? "New TOSO order " + order.code : n + " new TOSO orders", {
+        body: n === 1 ? order.name + ", " + money(order.total) + ", " +
+              (order.mode === "delivery" ? (order.zone || "delivery") : "collection") : "Open the kitchen panel",
+        tag:"toso-order", renotify:true
+      });
+    }catch(e){}
+  }
+  flashTitle();
+}
+let flashTimer = null;
+function flashTitle(){
+  const base = "TOSO Kitchen";
+  clearInterval(flashTimer);
+  let on = false, ticks = 0;
+  flashTimer = setInterval(()=>{
+    const n = ORDERS.filter(o=>o.status==="new").length;
+    if(!n || ticks++ > 20){ clearInterval(flashTimer); document.title = base; return; }
+    document.title = (on = !on) ? "(" + n + ") New order" : base;
+  }, 700);
+}
+function toast(msg){
+  const t = document.createElement("div");
+  t.className = "toast"; t.textContent = msg;
+  $("#toasts").appendChild(t);
+  setTimeout(()=>t.remove(), 2600);
+}
+function ago(iso){
+  const s = Math.max(0, (Date.now() - new Date(iso).getTime())/1000);
+  if(s < 60) return "just now";
+  const m = Math.floor(s/60);
+  if(m < 60) return m + (m===1?" minute ago":" minutes ago");
+  const h = Math.floor(m/60);
+  return h + (h===1?" hour ago":" hours ago");
+}
+
+/* ============================================================
+   render
+   ============================================================ */
+function bucket(o){
+  if(o.status === "new") return "new";
+  if(o.status === "cooking") return "cooking";
+  if(o.status === "away" || o.status === "ready") return "out";
+  return "done";
+}
+function render(){
+  const counts = {};
+  STAGES.forEach(s => counts[s.f] = 0);
+  ORDERS.forEach(o=>{ counts[bucket(o)]++; counts.all++; });
+
+  $("#tabs").innerHTML = STAGES.map(s=>
+    `<button role="tab" data-f="${s.f}" aria-selected="${filter===s.f}">${s.label}
+      <b class="${s.f==="new" && counts.new ? "hot":""}">${counts[s.f]}</b></button>`).join("");
+
+  $("#note").innerHTML = live() ? "" : `
+    <div class="note__in">${SVG.info}
+      <div><b>Demo mode.</b> Orders placed on the site show up here only while both pages are open on this
+        device, and nothing is saved. Point BACKEND at your order server to run this for real across every phone
+        in the shop, with a WhatsApp alert on each order.
+        <button id="simBtn" type="button">Simulate an incoming order</button></div>
+    </div>`;
+
+  const list = ORDERS.filter(o => filter === "all" || bucket(o) === filter);
+  const board = $("#board");
+  if(!list.length){
+    board.innerHTML = `<div class="blank"><h3>${filter==="new"?"No new orders":"Nothing here"}</h3>
+      <p>${filter==="new"
+        ? "The moment an order comes in it lands here and the panel chimes."
+        : "Orders move through this stage as you work them."}</p></div>`;
+    return;
+  }
+  board.innerHTML = list.map(card).join("");
+}
+
+function card(o){
+  const del = o.mode === "delivery";
+  const st = o.status || "new";
+  const items = (o.lines||[]).map(l=>`
+    <div class="it">
+      <span class="it__q">${l.qty}</span>
+      <span><span class="it__n">${esc(l.name)}</span>
+        ${[l.extra?"Extra":l.size, (l.addons||[]).map(k=>ADDON_NAMES[k]||k).join(", ")].filter(Boolean).length
+          ? `<span class="it__m">${esc([l.extra?"Extra":l.size,(l.addons||[]).map(k=>ADDON_NAMES[k]||k).join(", ")].filter(Boolean).join(", "))}</span>` : ""}
+        ${l.note ? `<span class="it__note">${esc(l.note)}</span>` : ""}
+      </span>
+      <span class="it__p">${money(l.unit*l.qty)}</span>
+    </div>`).join("");
+
+  let acts = "";
+  if(st === "new") acts = `<button class="act act--go" data-do="cooking">Start cooking</button>
+    <button class="act act--q" data-do="print">Print</button>
+    <button class="act act--x" data-do="cancelled">Cancel</button>`;
+  else if(st === "cooking") acts = `<button class="act act--go" data-do="${del?"away":"ready"}">${del?"Send it out":"Mark ready"}</button>
+    <button class="act act--q" data-do="print">Print</button>`;
+  else if(st === "away" || st === "ready") acts = `<button class="act act--ok" data-do="done">Complete</button>`;
+  else acts = `<button class="act act--q" data-do="print">Print</button>`;
+
+  return `<article class="tk ${fresh.has(o.code)?"is-fresh":""}" data-code="${esc(o.code)}">
+    <div class="tk__h">
+      <div><div class="tk__code">${esc(o.code)}</div><div class="tk__when">${ago(o.placedAt)}</div></div>
+      <span class="pill ${bucket(o)==="out"?(del?"away":"ready"):st}">${LABEL[st]||st}</span>
+    </div>
+    <div class="tk__who">
+      <div class="tk__row">${SVG.user}<div><b>${esc(o.name)}</b>
+        <span class="mode ${del?"":"pick"}" style="margin-left:8px">${del?"Delivery":"Collection"}</span></div></div>
+      <div class="tk__row">${SVG.phone}<a href="tel:${esc(o.phone)}">${esc(o.phone)}</a></div>
+      <div class="tk__row">${SVG.pin}<div>${del
+        ? `<b>${esc(o.zone)}</b><br>${esc(o.address)}`
+        : "Collecting from 84 T Block" + (o.when ? ", in " + esc(o.when) : "")}</div></div>
+    </div>
+    <div class="tk__items">${items}</div>
+    ${o.note ? `<div class="tk__note">${esc(o.note)}</div>` : ""}
+    <div class="tk__f">
+      <div class="tk__tot"><span>Cash on ${del?"delivery":"collection"}</span><b>${money(o.total)}</b></div>
+      <div class="acts">${acts}</div>
+    </div>
+  </article>`;
+}
+
+const ADDON_NAMES = {cheese:"Cheese slice",beef:"Beef patty",fillet:"Chicken fillet",crispy:"Crispy chicken",
+  zing:"Crispy zing fillet",mush:"Mushroom",corn:"Sweet corn",fries:"Fries",masala:"Masala fries",
+  combo:"Drink and fries",fmasala:"Fries masala",dip:"Dipping sauce"};
+
+/* ============================================================
+   actions
+   ============================================================ */
+async function setStatus(code, status){
+  const o = ORDERS.find(x=>x.code===code); if(!o) return;
+  const was = o.status;
+  o.status = status; fresh.delete(code); render();
+  if(live()){
+    try{ await post("status", {code, status}); }
+    catch(err){ o.status = was; render(); toast("Could not save that, try again"); return; }
+  }else if(chan){
+    chan.postMessage({type:"status", code, status});
+  }
+  toast(code + " " + (LABEL[status]||status).toLowerCase());
+}
+
+function printTicket(code){
+  const o = ORDERS.find(x=>x.code===code); if(!o) return;
+  const del = o.mode === "delivery";
+  const rows = (o.lines||[]).map(l=>{
+    const bits = [l.extra?"Extra":l.size, (l.addons||[]).map(k=>ADDON_NAMES[k]||k).join(", "), l.note]
+      .filter(Boolean).join(" / ");
+    return "<tr><td>" + l.qty + "</td><td>" + esc(l.name) +
+      (bits ? "<br><small>" + esc(bits) + "</small>" : "") + "</td><td>" + money(l.unit*l.qty) + "</td></tr>";
+  }).join("");
+  const w = window.open("", "_blank", "width=380,height=640");
+  if(!w){ toast("Allow pop ups to print tickets"); return; }
+  w.document.write(
+    "<!doctype html><meta charset='utf-8'><title>" + esc(o.code) + "</title><style>" +
+    "body{font:13px/1.45 ui-monospace,Menlo,Consolas,monospace;padding:14px;margin:0}" +
+    "h1{font-size:17px;margin:0 0 2px;letter-spacing:2px}table{width:100%;border-collapse:collapse;margin:8px 0}" +
+    "td{padding:4px 0;vertical-align:top}td:first-child{width:26px}td:last-child{text-align:right;white-space:nowrap}" +
+    "small{color:#444}hr{border:0;border-top:1px dashed #999;margin:8px 0}.tot{display:flex;justify-content:space-between;font-weight:700;font-size:15px}" +
+    "</style><h1>TOSO</h1><div>84 T Block, DHA Phase 2</div><hr>" +
+    "<div><b>" + esc(o.code) + "</b> &nbsp; " + (del ? "DELIVERY" : "COLLECTION") + "</div>" +
+    "<div>" + new Date(o.placedAt).toLocaleString() + "</div><hr>" +
+    "<div>" + esc(o.name) + "<br>" + esc(o.phone) +
+    (del ? "<br>" + esc(o.zone) + "<br>" + esc(o.address) : "") + "</div><hr>" +
+    "<table>" + rows + "</table><hr>" +
+    "<div class='tot'><span>TOTAL</span><span>" + money(o.total) + "</span></div>" +
+    "<div>Cash on " + (del ? "delivery" : "collection") + "</div>" +
+    (o.note ? "<hr><div>Note: " + esc(o.note) + "</div>" : "") +
+    "<hr><div style='text-align:center'>Good food. Good vibes.</div>");
+  w.document.close(); w.focus();
+  setTimeout(()=>{ try{ w.print(); }catch(e){} }, 250);
+}
+
+$("#board").addEventListener("click", e=>{
+  const b = e.target.closest("[data-do]"); if(!b) return;
+  const code = b.closest(".tk").dataset.code;
+  if(b.dataset.do === "print") printTicket(code);
+  else setStatus(code, b.dataset.do);
+});
+$("#tabs").addEventListener("click", e=>{
+  const b = e.target.closest("[data-f]"); if(!b) return;
+  filter = b.dataset.f;
+  if(filter === "new") fresh.clear();
+  render();
+});
+$("#note").addEventListener("click", e=>{ if(e.target.id === "simBtn") simulate(); });
+
+$("#soundBtn").addEventListener("click", e=>{
+  sound = !sound;
+  e.currentTarget.setAttribute("aria-pressed", String(sound));
+  if(sound) chime();
+  toast(sound ? "Sound alerts on" : "Sound alerts off");
+});
+$("#notifBtn").addEventListener("click", async e=>{
+  if(!("Notification" in window)){ toast("This browser has no desktop notifications"); return; }
+  if(notify){ notify = false; e.currentTarget.setAttribute("aria-pressed","false"); toast("Notifications off"); return; }
+  let perm = Notification.permission;
+  if(perm !== "granted") perm = await Notification.requestPermission();
+  notify = perm === "granted";
+  e.currentTarget.setAttribute("aria-pressed", String(notify));
+  toast(notify ? "Notifications on" : "Notifications were blocked in your browser settings");
+});
+$("#refreshBtn").addEventListener("click", ()=>{ refresh(); toast("Refreshed"); });
+
+// unlocking is a real user gesture, so this is the moment the browser
+// will let us ask. Staff should not have to hunt for the setting.
+async function askNotify(){
+  if(!("Notification" in window)) return;
+  try{
+    let perm = Notification.permission;
+    if(perm === "default") perm = await Notification.requestPermission();
+    notify = perm === "granted";
+    $("#notifBtn").setAttribute("aria-pressed", String(notify));
+  }catch(e){}
+}
+
+/* ============================================================
+   demo helper so the panel can be tried before the server is up
+   ============================================================ */
+let simN = 0;
+function simulate(){
+  simN++;
+  const pool = [
+    {name:"Mexican Smash", size:"Double", unit:1150, addons:["cheese"], note:"extra jalapenos", qty:1},
+    {name:"Toso Signature", size:"12 pcs", unit:1195, addons:[], note:"", qty:1},
+    {name:"Fiesta Fries", size:"Regular", unit:900, addons:["dip"], note:"", qty:2},
+    {name:"Crispy Crown", size:"Single", unit:800, addons:[], note:"no pickles", qty:1}
+  ];
+  const lines = pool.slice(0, 1 + (simN % 3)).map(x=>Object.assign({}, x));
+  const total = lines.reduce((t,l)=>t + l.unit*l.qty, 0);
+  const names = ["Bilal","Ayesha","Hamza","Sana","Usman"];
+  const zones = ["DHA Phase 2","DHA Phase 5","DHA Phase 8","DHA EME Sector"];
+  receive({
+    code: "TOSO-" + String(1000 + Math.floor(Math.random()*9000)),
+    name: names[simN % names.length],
+    phone: "0300 12345" + String(10 + (simN % 89)),
+    mode: simN % 4 === 0 ? "pickup" : "delivery",
+    zone: zones[simN % zones.length],
+    address: "House " + (simN*7 % 90 + 1) + ", Street " + (simN % 12 + 1) + ", Block C",
+    when: simN % 4 === 0 ? "20 minutes" : "",
+    note: simN % 3 === 0 ? "Please ring the top bell" : "",
+    lines, total, status:"new", placedAt: new Date().toISOString()
+  });
+}
+
+function receive(order){
+  if(ORDERS.some(o=>o.code === order.code)) return;
+  ORDERS.unshift(order);
+  fresh.add(order.code); seen.add(order.code);
+  alertStaff(1, order);
+  render();
+}
+
+/* ============================================================
+   start
+   ============================================================ */
+function unlock(){
+  const v = $("#pin").value.trim();
+  if(v !== STAFF_PIN){
+    $("#pinErr").textContent = "That code is not right.";
+    $("#pin").value = ""; $("#pin").focus();
+    return;
+  }
+  $("#gate").style.display = "none";
+  $("#app").classList.add("is-on");
+  try{ AC = new (window.AudioContext || window.webkitAudioContext)(); }catch(e){}
+
+  try{
+    if("BroadcastChannel" in window){
+      chan = new BroadcastChannel(BACKEND.channel);
+      chan.onmessage = e=>{
+        const m = e.data || {};
+        if(m.type === "order" && !live()) receive(m.order);
+        if(m.type === "status"){
+          const o = ORDERS.find(x=>x.code===m.code);
+          if(o && o.status !== m.status){ o.status = m.status; render(); }
+        }
+      };
+    }
+  }catch(e){}
+
+  askNotify();
+  conn(live() ? "on" : "demo", live() ? "Connecting" : "Demo mode, orders stay on this device");
+  render();
+  refresh(true);
+  if(live()) polling = setInterval(()=>refresh(true), BACKEND.pollMs);
+  setInterval(()=>{ if(ORDERS.length) render(); }, 60000);
+}
+$("#pinGo").addEventListener("click", unlock);
+$("#pin").addEventListener("keydown", e=>{ if(e.key === "Enter") unlock(); });
+$("#pin").focus();
+
+})();
+</script>
+</body>
+</html>
